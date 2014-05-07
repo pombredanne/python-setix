@@ -5,7 +5,7 @@ from distutils.core import setup
 setup(
     name = "setix",
     packages = ["setix", "setix.backends"],
-    version = "0.8.2",
+    version = "0.8.3",
     description = "Fast data structures for finding intersecting sets and similar strings",
     author = "Marcin Pertek",
     author_email = "kat.zygfryd@gmail.com",
@@ -26,6 +26,6 @@ setup(
         "Topic :: Text Processing :: Indexing",
         "Topic :: Scientific/Engineering :: Information Analysis",
         ],
-    requires = ["numpy (>=1.5.0)", "six"],
+    install_requires = ["numpy>=1.5.0", "six"],
     long_description = open(os.path.join(os.path.dirname(__file__), "README.rst"), "rb").read ()
 )
